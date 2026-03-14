@@ -14,6 +14,8 @@
         .gradient-text { background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .btn-primary { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); transition: all 0.3s ease; box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3); }
         .btn-primary:hover { transform: scale(1.05); box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.4); }
+        .btn-outline { border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s ease; }
+        .btn-outline:hover { background: rgba(255, 255, 255, 0.05); border-color: #818cf8; }
         
         .hero-title { font-size: clamp(2.5rem, 8.5vw, 6.5rem); font-weight: 800; line-height: 0.85; letter-spacing: -0.07em; }
         
@@ -28,11 +30,12 @@
     <nav class="fixed top-0 w-full z-50 glass-nav">
         <div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
             <span class="text-3xl font-extrabold tracking-tighter gradient-text">JC.</span>
-            <div class="hidden md:flex gap-12 text-base font-semibold uppercase tracking-widest">
+            <div class="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-widest items-center">
                 <a href="#home" class="hover:text-indigo-400 transition-colors">Home</a>
                 <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
                 <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
                 <a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a>
+                <a href="Resume.pdf" download="B_Jahnavi_Chowdhary_Resume.pdf" class="btn-outline px-4 py-2 rounded-full text-[10px] font-bold border-indigo-500/30 text-indigo-300">Download CV</a>
             </div>
             <a href="mailto:jhanaviballa23904@gmail.com" class="btn-primary px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest">Connect</a>
         </div>
@@ -50,8 +53,8 @@
             <div class="flex flex-wrap gap-8">
                 <a href="#projects" class="btn-primary px-12 py-6 rounded-3xl text-xl font-bold">Launch Projects</a>
                 <div class="glass-card px-10 py-6 rounded-3xl flex flex-col justify-center">
-                    <p class="text-indigo-400 text-xs uppercase font-extrabold tracking-[0.2em] mb-1">Academic Performance</p>
-                    <p class="text-3xl font-bold">8.98 CGPA</p>
+                    <p class="text-indigo-400 text-sm uppercase font-extrabold tracking-[0.2em] mb-1 text-left">Academic Performance</p>
+                    <p class="text-3xl font-bold text-left">8.98 CGPA</p>
                 </div>
             </div>
         </div>
@@ -71,7 +74,7 @@
                 <div>
                     <span class="bg-indigo-500/10 text-indigo-400 text-xs font-bold px-6 py-2 rounded-full uppercase tracking-widest mb-10 inline-block">AI & CV Research</span>
                     <h3 class="text-4xl font-bold mb-6 group-hover:gradient-text transition">FITJourney AI</h3>
-                    <p class="text-slate-400 text-xl leading-relaxed mb-10 font-light text-left">An AI fitness ecosystem using Google Gemini for workout planning and MediaPipe for real-time form correction.</p>
+                    <p class="text-slate-400 text-xl leading-relaxed mb-10 font-light">An AI fitness ecosystem using Google Gemini for workout planning and MediaPipe for real-time form correction.</p>
                 </div>
                 <a href="https://fitjourney-968v.onrender.com" target="_blank" class="text-indigo-400 font-bold text-xl hover:underline decoration-2 underline-offset-8 transition-all">Live Demo →</a>
             </div>
@@ -119,14 +122,14 @@
                 <div class="space-y-20">
                     <div class="relative pl-12 border-l-4 border-indigo-500">
                         <div class="absolute -left-[14px] top-0 w-6 h-6 bg-indigo-500 rounded-full"></div>
-                        <h4 class="text-3xl font-bold">Hindustan Aeronautics Ltd (HAL)</h4>
-                        <p class="text-indigo-400 text-xl font-bold mb-4 italic">IT Intern | 2025</p>
-                        <p class="text-slate-400 text-xl font-light">Completed an IT internship at the Rotary Wing Research & Design Centre (RWR&DC).</p>
+                        <h4 class="text-3xl font-bold text-left">Hindustan Aeronautics Ltd (HAL)</h4>
+                        <p class="text-indigo-400 text-xl font-bold mb-4 italic text-left">IT Intern | 2025</p>
+                        <p class="text-slate-400 text-xl font-light">Interned at Rotary Wing Research & Design Centre (RWR&DC).</p>
                     </div>
                     <div class="relative pl-12 border-l-4 border-slate-800">
                         <div class="absolute -left-[14px] top-0 w-6 h-6 bg-slate-800 rounded-full"></div>
-                        <h4 class="text-3xl font-bold text-slate-300">Microsoft Edunet Foundation</h4>
-                        <p class="text-indigo-400 text-xl font-bold mb-4 italic">AI Virtual Intern | 2025</p>
+                        <h4 class="text-3xl font-bold text-left">Microsoft Edunet Foundation</h4>
+                        <p class="text-indigo-400 text-xl font-bold mb-4 italic text-left">AI Virtual Intern | 2025</p>
                         <p class="text-slate-400 text-xl font-light">Practical exploration of Machine Learning use cases and Python programming.</p>
                     </div>
                 </div>
